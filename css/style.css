@@ -1,49 +1,115 @@
-/* General reset */
-body {
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+  font-family: 'AmasisMTProMedium';
+  src: url('../fonts/AmasisMTProMedium.woff2') format('woff2'),
+       url('../fonts/AmasisMTProMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base */
+body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #CABA9C; /* khaki */
+  color: #102820; /* black green */
+  padding-bottom: 50px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'AmasisMTProMedium', serif;
+  color: #102820;
+}
+p, label {
+  font-family: Arial, sans-serif;
+  color: #4C6444; /* heather green */
 }
 
 /* Header */
 header {
-  background: #333;
-  color: #fff;
-  padding: 10px;
+  background: #102820;
+  color: #CABA9C;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 header img {
   height: 50px;
 }
-
 nav a {
-  color: #fff;
+  color: #CABA9C;
   text-decoration: none;
   margin: 0 10px;
 }
-
 nav a:hover {
-  text-decoration: underline;
+  color: #8A6240; /* raw umber */
 }
 
-/* Main content */
+/* Main */
 main {
   padding: 20px;
 }
-
 main img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #4D2D18; /* coffee oak */
+  border-radius: 4px;
+}
+button {
+  background-color: #4C6444; /* heather green */
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #8A6240; /* raw umber */
+}
+
 /* Footer */
 footer {
-  background: #333;
-  color: #fff;
+  background: #4D2D18;
+  color: #CABA9C;
   text-align: center;
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+  header img {
+    height: 40px;
+  }
 }
