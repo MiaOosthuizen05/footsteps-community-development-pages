@@ -1,169 +1,384 @@
-/* Global Reset */
+/* =====================================================
+   FOOTSTEPS WEBSITE - PART 3 CSS
+===================================================== */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fonts & Colors */
+/* BODY */
 body {
   font-family: "Amasis MT Pro Medium", serif;
-  background-color: #CABA9C; /* khaki */
-  color: #102820; /* black green */
+  background-color: #CABA9C;
+  color: #102820;
   line-height: 1.6;
 }
 
-/* Header */
+/* =====================================================
+   HEADER
+===================================================== */
 header {
-  background-color: #4C6444; /* heather green */
-  color: #fff;
+  background-color: #4C6444;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 15px 30px;
 }
 
 header img {
-  height: 50px;
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #CABA9C; /* khaki highlight */
+  color: #CABA9C;
 }
 
-/* Hero Section */
+/* =====================================================
+   HERO SECTION
+===================================================== */
 .hero {
   text-align: center;
+  background-color: #8A6240;
+  color: white;
   padding: 40px 20px;
-  background-color: #8A6240; /* raw umber */
-  color: #fff;
 }
 
 .hero img {
   width: 100%;
-  max-height: 400px;
+  max-height: 450px;
   object-fit: cover;
-  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-/* Main Content */
+.hero h1 {
+  margin-top: 20px;
+  color: white;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
 main {
-  padding: 20px;
+  padding: 30px 20px;
 }
 
-h1, h2, h3, h4 {
-  margin-bottom: 10px;
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 15px;
   color: #102820;
 }
 
-/* Services Grid */
+p {
+  margin-bottom: 15px;
+}
+
+/* =====================================================
+   SERVICES
+===================================================== */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .services div {
-  background: #fff;
-  border: 2px solid #4D2D18; /* coffee oak */
-  padding: 15px;
+  background: white;
+  border: 2px solid #4D2D18;
+  padding: 20px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.services div:hover {
+  transform: translateY(-5px);
 }
 
 .services img {
-  height: 60px;
+  height: 70px;
   margin-bottom: 10px;
 }
 
-/* Team Section */
-.team img {
-  width: 200px;
-  border-radius: 50%;
-  margin: 10px;
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 20px 0;
+  border: 2px solid #4C6444;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-/* Forms */
+/* =====================================================
+   TEAM
+===================================================== */
+.team {
+  text-align: center;
+}
+
+.team img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px;
+  border: 4px solid #4C6444;
+  transition: 0.3s;
+}
+
+.team img:hover {
+  transform: scale(1.05);
+}
+
+/* =====================================================
+   FAQ ACCORDION
+===================================================== */
+.accordion {
+  background-color: #4C6444;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.accordion:hover {
+  background-color: #102820;
+}
+
+.panel {
+  display: none;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+}
+
+/* =====================================================
+   FORMS
+===================================================== */
 form {
+  max-width: 650px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 form label {
-  margin: 10px 0 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-form input, form textarea, form button {
-  padding: 10px;
+form input,
+form textarea,
+form select {
+  padding: 12px;
   border: 1px solid #4C6444;
   border-radius: 5px;
 }
 
+form textarea {
+  resize: vertical;
+}
+
 form button {
+  margin-top: 20px;
   background-color: #4C6444;
-  color: #fff;
-  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 12px;
   cursor: pointer;
-  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 form button:hover {
   background-color: #102820;
 }
 
-/* Contact Section */
+/* =====================================================
+   SUCCESS / RESPONSE BOXES
+===================================================== */
+#response,
+#contactResponse {
+  margin-top: 20px;
+  background-color: white;
+  border-left: 5px solid #4C6444;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
+.contact {
+  text-align: center;
+}
+
 .contact img {
-  height: 50px;
+  max-width: 100%;
   margin-bottom: 10px;
 }
 
 .contact div {
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .social a {
   color: #4C6444;
+  font-weight: bold;
   text-decoration: none;
-  margin: 0 5px;
 }
 
 .social a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  background-color: #4D2D18; /* coffee oak */
-  color: #fff;
-  text-align: center;
-  padding: 15px;
+/* =====================================================
+   MAP
+===================================================== */
+#map {
+  width: 100%;
+  height: 400px;
   margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid #4C6444;
 }
 
-/* Responsive */
+/* =====================================================
+   GALLERY
+===================================================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+.btn {
+  display: inline-block;
+  background-color: #4C6444;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #102820;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+  background-color: #4D2D18;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* =====================================================
+   404 PAGE
+===================================================== */
+.error-page {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.error-page h1 {
+  font-size: 4rem;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 @media (max-width: 768px) {
+
   header {
     flex-direction: column;
+    text-align: center;
   }
 
   nav {
-    margin-top: 10px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .team img {
+    width: 150px;
+    height: 150px;
   }
 
   .services {
     grid-template-columns: 1fr;
   }
 
-  .team img {
-    width: 150px;
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
   }
 }
