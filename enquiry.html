@@ -1,43 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Enquiry</title>
-  <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Footsteps Enquiry Form</title>
+
+    <meta name="description"
+          content="Submit an enquiry about Footsteps leadership programmes, volunteering opportunities, strategic planning services and sponsorship initiatives.">
+
+    <meta name="keywords"
+          content="Footsteps, enquiry, volunteer, leadership, sponsorship, community development">
+
+    <meta name="author"
+          content="Mia Oosthuizen">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
 </head>
+
 <body>
-  <header>
-    <img src="images/footsteps_logo.png" alt="Footsteps Logo">
+
+<header>
+
+    <img src="images/footsteps_logo.png"
+         alt="Footsteps Logo">
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="enquiry.html">Enquiry</a>
-      <a href="contact.html">Contact</a>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+
     </nav>
-  </header>
 
-  <main>
+</header>
+
+<main>
+
     <h1>Enquiry Form</h1>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <p>
+        Use this form to enquire about our programmes,
+        services and opportunities.
+    </p>
 
-      <label for="service">Service Interested In:</label>
-      <input type="text" id="service" name="service">
+    <form id="enquiryForm">
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="name">
+            Full Name
+        </label>
 
-      <button type="submit">Submit</button>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required>
+
+        <label for="email">
+            Email Address
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+            required>
+
+        <label for="phone">
+            Contact Number
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required>
+
+        <label for="service">
+            Select a Service
+        </label>
+
+        <select id="service" required>
+
+            <option value="">
+                -- Select a Service --
+            </option>
+
+            <option value="Leadership">
+                Leadership Programme
+            </option>
+
+            <option value="Volunteer">
+                Volunteer Opportunities
+            </option>
+
+            <option value="Strategy">
+                Strategic Planning
+            </option>
+
+            <option value="Sponsorship">
+                Sponsorship Opportunities
+            </option>
+
+        </select>
+
+        <label for="message">
+            Additional Information
+        </label>
+
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Provide additional information..."
+            required></textarea>
+
+        <button type="submit">
+            Submit Enquiry
+        </button>
+
     </form>
-  </main>
 
-  <footer>
-    <p>© Footsteps 2026. All rights reserved.</p>
-  </footer>
+    <div id="response"></div>
+
+    <section>
+
+        <h2>Why Submit an Enquiry?</h2>
+
+        <p>
+            Our enquiry system helps connect you with the
+            most appropriate programme, service or opportunity
+            based on your interests.
+        </p>
+
+        <ul>
+
+            <li>Leadership Development Programmes</li>
+
+            <li>Volunteer Opportunities</li>
+
+            <li>Community Resource Support</li>
+
+            <li>Strategic Planning Services</li>
+
+            <li>Sponsorship Opportunities</li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; Footsteps 2026. All rights reserved.
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>

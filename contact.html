@@ -1,54 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Footsteps</title>
-  <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Footsteps | Get In Touch</title>
+
+    <meta name="description"
+          content="Contact Footsteps for leadership development, volunteer opportunities, sponsorships and community support programmes.">
+
+    <meta name="keywords"
+          content="Footsteps, contact, volunteer, sponsorship, leadership, community development">
+
+    <meta name="author"
+          content="Mia Oosthuizen">
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-  <header>
-    <img src="images/footsteps_logo.png" alt="Footsteps Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="enquiry.html">Enquiry</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <section class="contact">
-      <img src="images/contact_icon.png" alt="Contact Icon">
-      <h2>Get in Touch</h2>
-      <p>Email: info@footsteps.org</p>
-      <p>Phone: +27 11 123 4567</p>
-      <p>Address: 123 Community Lane, Johannesburg</p>
+    <header>
 
-      <h3>Office Hours</h3>
-      <p>Monday – Friday: 9 AM – 5 PM</p>
-      <p>Saturday: 9 AM – 1 PM</p>
+        <img src="images/footsteps_logo.png"
+             alt="Footsteps Logo">
 
-      <h3>Our Offices</h3>
-      <div>
-        <h4>Johannesburg</h4>
-        <img src="images/johannesburg_map.png" alt="Johannesburg Map">
-      </div>
-      <div>
-        <h4>Durban</h4>
-        <img src="images/durban_map.png" alt="Durban Map">
-      </div>
+        <nav>
 
-      <h3>Follow Us</h3>
-      <div class="social">
-        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
-      </div>
-    </section>
-  </main>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
 
-  <footer>
-    <p>© Footsteps 2026. All rights reserved.</p>
-  </footer>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <section class="contact">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                We would love to hear from you. Contact us regarding
+                volunteer opportunities, leadership programmes,
+                sponsorships, partnerships or community initiatives.
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                info@footsteps.org
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                +27 11 123 4567
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                123 Community Lane, Johannesburg
+            </p>
+
+            <h3>Office Hours</h3>
+
+            <p>Monday - Friday: 09:00 - 17:00</p>
+            <p>Saturday: 09:00 - 13:00</p>
+
+        </section>
+
+        <section>
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm">
+
+                <label for="contactName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="contactName"
+                    required>
+
+                <label for="contactEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    required>
+
+                <label for="contactSubject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="contactSubject"
+                    required>
+
+                <label for="contactMessage">
+                    Message
+                </label>
+
+                <textarea
+                    id="contactMessage"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Email
+                </button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h2>Our Location</h2>
+
+            <div id="map">
+
+                <p>
+                    Interactive map will display here.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Follow Us</h2>
+
+            <div class="social">
+
+                <a href="#">Facebook</a> |
+
+                <a href="#">Instagram</a> |
+
+                <a href="#">LinkedIn</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; Footsteps 2026. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
