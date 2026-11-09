@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://miaoosthuizen05.github.io/footsteps-community-development-pages/sitemap.xml
