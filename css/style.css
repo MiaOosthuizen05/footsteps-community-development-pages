@@ -352,52 +352,40 @@ footer {
     margin-top: 40px;
 }
 
-/* 404 */
+/* 404 PAGE */
 
 .error-page {
     text-align: center;
     padding: 100px 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .error-page h1 {
-    font-size: 5rem;
+    font-size: 6rem;
+    color: #4C6444;
+    margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
+.error-page h2 {
+    color: #102820;
+    margin-bottom: 10px;
+}
 
-@media (max-width: 768px) {
+.error-page h2::after {
+    display: none;
+}
 
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+.error-page p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    color: #555;
+}
 
-    nav {
-        justify-content: center;
-        margin-top: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .team {
-        flex-direction: column;
-    }
-
-    .stats {
-        flex-direction: column;
-    }
-
-    main {
-        padding: 15px;
-    }
+.error-page .btn {
+    margin-top: 15px;
 }
