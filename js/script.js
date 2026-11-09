@@ -327,5 +327,41 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(section);
 
     });
+/* ==================================
+   GALLERY FILTER
+================================== */
 
+const galleryFilter =
+    document.getElementById("galleryFilter");
+
+if (galleryFilter) {
+
+    galleryFilter.addEventListener("change", () => {
+
+        const selected =
+            galleryFilter.value;
+
+        const images =
+            document.querySelectorAll(".gallery a");
+
+        images.forEach(image => {
+
+            if (
+                selected === "all" ||
+                image.classList.contains(selected)
+            ) {
+
+                image.style.display = "block";
+
+            } else {
+
+                image.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}
 });

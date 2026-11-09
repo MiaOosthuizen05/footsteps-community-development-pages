@@ -23,7 +23,7 @@
           content="View community events, workshops, leadership programmes and volunteer projects from Footsteps.">
 
     <meta property="og:image"
-          content="images/events.jpg">
+          content="images/hero_banner.jpg">
 
     <meta property="og:type"
           content="website">
@@ -33,10 +33,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- LIGHTBOX CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
-      rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+          rel="stylesheet">
 
 </head>
 
@@ -48,14 +46,12 @@
          alt="Footsteps Logo">
 
     <nav>
-
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="gallery.html">Gallery</a>
         <a href="enquiry.html">Enquiry</a>
         <a href="contact.html">Contact</a>
-
     </nav>
 
 </header>
@@ -76,12 +72,32 @@
 
     <section>
 
-        <h2>Search Gallery</h2>
+        <h2>Search & Filter Gallery</h2>
 
         <input
             type="text"
             id="gallerySearch"
             placeholder="Search gallery images...">
+
+        <select id="galleryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="community">
+                Community
+            </option>
+
+            <option value="leadership">
+                Leadership
+            </option>
+
+            <option value="gardens">
+                Gardens
+            </option>
+
+        </select>
 
     </section>
 
@@ -91,7 +107,10 @@
 
         <div class="gallery">
 
+            <!-- COMMUNITY -->
+
             <a href="images/events.jpg"
+               class="community"
                data-lightbox="footsteps-gallery"
                data-title="Community Event">
 
@@ -101,6 +120,7 @@
             </a>
 
             <a href="images/community workshop.jpg"
+               class="community"
                data-lightbox="footsteps-gallery"
                data-title="Community Workshop">
 
@@ -109,7 +129,20 @@
 
             </a>
 
+            <a href="images/hero_banner.jpg"
+               class="community"
+               data-lightbox="footsteps-gallery"
+               data-title="Footsteps Community">
+
+                <img src="images/hero_banner.jpg"
+                     alt="Footsteps Community">
+
+            </a>
+
+            <!-- LEADERSHIP -->
+
             <a href="images/leadership gardening.png"
+               class="leadership"
                data-lightbox="footsteps-gallery"
                data-title="Leadership Programme">
 
@@ -118,39 +151,125 @@
 
             </a>
 
-            <a href="images/volunteer gardening.jpg"
-               data-lightbox="footsteps-gallery"
-               data-title="Volunteer Programme">
+            <!-- GARDENS -->
 
-                <img src="images/volunteer gardening.jpg"
-                     alt="Volunteer Programme">
+            <a href="images/bushes.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Bushes">
+
+                <img src="images/bushes.jpg"
+                     alt="Bushes">
 
             </a>
 
-            <a href="images/Team member 1.jpg"
+            <a href="images/defined bushes.jpg"
+               class="gardens"
                data-lightbox="footsteps-gallery"
-               data-title="Team Member">
+               data-title="Defined Bushes">
 
-                <img src="images/Team member 1.jpg"
-                     alt="Community Coordinator">
+                <img src="images/defined bushes.jpg"
+                     alt="Defined Bushes">
 
             </a>
 
-            <a href="images/Team member 2.jpg"
+            <a href="images/flower pathway.jpg"
+               class="gardens"
                data-lightbox="footsteps-gallery"
-               data-title="Team Member">
+               data-title="Flower Pathway">
 
-                <img src="images/Team member 2.jpg"
-                     alt="Leadership Coordinator">
+                <img src="images/flower pathway.jpg"
+                     alt="Flower Pathway">
 
             </a>
 
-            <a href="images/hero_banner.jpg"
+            <a href="images/flowers.jpg"
+               class="gardens"
                data-lightbox="footsteps-gallery"
-               data-title="Footsteps Community">
+               data-title="Flowers">
 
-                <img src="images/hero_banner.jpg"
-                     alt="Footsteps Community">
+                <img src="images/flowers.jpg"
+                     alt="Flowers">
+
+            </a>
+
+            <a href="images/fruit trees.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Fruit Trees">
+
+                <img src="images/fruit trees.jpg"
+                     alt="Fruit Trees">
+
+            </a>
+
+            <a href="images/lavander flower garden.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Lavender Garden">
+
+                <img src="images/lavander flower garden.jpg"
+                     alt="Lavender Garden">
+
+            </a>
+
+            <a href="images/mowed striped grass lawn.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Mowed Lawn">
+
+                <img src="images/mowed striped grass lawn.jpg"
+                     alt="Mowed Lawn">
+
+            </a>
+
+            <a href="images/organized trees.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Organized Trees">
+
+                <img src="images/organized trees.jpg"
+                     alt="Organized Trees">
+
+            </a>
+
+            <a href="images/palm tree garden.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Palm Tree Garden">
+
+                <img src="images/palm tree garden.jpg"
+                     alt="Palm Tree Garden">
+
+            </a>
+
+            <a href="images/pink trees.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Pink Trees">
+
+                <img src="images/pink trees.jpg"
+                     alt="Pink Trees">
+
+            </a>
+
+            <a href="images/river garden.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="River Garden">
+
+                <img src="images/river garden.jpg"
+                     alt="River Garden">
+
+            </a>
+
+            <a href="images/shaped bushes.jpg"
+               class="gardens"
+               data-lightbox="footsteps-gallery"
+               data-title="Shaped Bushes">
+
+                <img src="images/shaped bushes.jpg"
+                     alt="Shaped Bushes">
 
             </a>
 
