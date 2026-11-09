@@ -11,16 +11,15 @@
     <title>Footsteps Enquiry Form</title>
 
     <meta name="description"
-          content="Submit an enquiry about Footsteps leadership programmes, volunteering opportunities, strategic planning services and sponsorship initiatives.">
+          content="Submit an enquiry about Footsteps programmes, leadership development, strategic planning, volunteering and sponsorship opportunities.">
 
     <meta name="keywords"
-          content="Footsteps, enquiry, volunteer, leadership, sponsorship, community development">
+          content="Footsteps, enquiry form, leadership development, volunteer opportunities, sponsorship">
 
     <meta name="author"
           content="Mia Oosthuizen">
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -45,114 +44,210 @@
 
 <main>
 
-    <h1>Enquiry Form</h1>
+    <section>
 
-    <p>
-        Use this form to enquire about our programmes,
-        services and opportunities.
-    </p>
+        <h1>Enquiry Form</h1>
 
-    <form id="enquiryForm">
+        <p>
+            Interested in our programmes, volunteering opportunities,
+            leadership development initiatives or sponsorship projects?
+            Complete the enquiry form below and we will assist you.
+        </p>
 
-        <label for="name">
-            Full Name
-        </label>
-
-        <input
-            type="text"
-            id="name"
-            placeholder="Enter your full name"
-            required>
-
-        <label for="email">
-            Email Address
-        </label>
-
-        <input
-            type="email"
-            id="email"
-            placeholder="Enter your email address"
-            required>
-
-        <label for="phone">
-            Contact Number
-        </label>
-
-        <input
-            type="tel"
-            id="phone"
-            placeholder="Enter your phone number"
-            required>
-
-        <label for="service">
-            Select a Service
-        </label>
-
-        <select id="service" required>
-
-            <option value="">
-                -- Select a Service --
-            </option>
-
-            <option value="Leadership">
-                Leadership Programme
-            </option>
-
-            <option value="Volunteer">
-                Volunteer Opportunities
-            </option>
-
-            <option value="Strategy">
-                Strategic Planning
-            </option>
-
-            <option value="Sponsorship">
-                Sponsorship Opportunities
-            </option>
-
-        </select>
-
-        <label for="message">
-            Additional Information
-        </label>
-
-        <textarea
-            id="message"
-            rows="5"
-            placeholder="Provide additional information..."
-            required></textarea>
-
-        <button type="submit">
-            Submit Enquiry
-        </button>
-
-    </form>
-
-    <div id="response"></div>
+    </section>
 
     <section>
 
-        <h2>Why Submit an Enquiry?</h2>
+        <h2>Submit Your Enquiry</h2>
 
-        <p>
-            Our enquiry system helps connect you with the
-            most appropriate programme, service or opportunity
-            based on your interests.
-        </p>
+        <form id="enquiryForm">
 
-        <ul>
+            <label for="name">
+                Full Name
+            </label>
 
-            <li>Leadership Development Programmes</li>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required>
 
-            <li>Volunteer Opportunities</li>
+            <label for="email">
+                Email Address
+            </label>
 
-            <li>Community Resource Support</li>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required>
 
-            <li>Strategic Planning Services</li>
+            <label for="phone">
+                Contact Number
+            </label>
 
-            <li>Sponsorship Opportunities</li>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required>
 
-        </ul>
+            <label for="service">
+                Service of Interest
+            </label>
+
+            <select id="service" required>
+
+                <option value="">
+                    -- Select an Option --
+                </option>
+
+                <option value="Leadership">
+                    Leadership Development Programme
+                </option>
+
+                <option value="Volunteer">
+                    Volunteer Opportunities
+                </option>
+
+                <option value="Strategy">
+                    Strategic Planning Services
+                </option>
+
+                <option value="Sponsorship">
+                    Sponsorship Opportunities
+                </option>
+
+            </select>
+
+            <label for="message">
+                Additional Information
+            </label>
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Provide any additional details..."
+                required></textarea>
+
+            <button type="submit">
+
+                Submit Enquiry
+
+            </button>
+
+        </form>
+
+        <div id="response"></div>
+
+    </section>
+
+    <section>
+
+        <h2>How Our Enquiry Process Works</h2>
+
+        <div class="services">
+
+            <div>
+
+                <h3>1. Submit</h3>
+
+                <p>
+                    Complete the enquiry form with your details
+                    and programme interests.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>2. Review</h3>
+
+                <p>
+                    Our team reviews your enquiry and matches
+                    you with the appropriate programme or service.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>3. Response</h3>
+
+                <p>
+                    A Footsteps representative will contact you
+                    with more information and available opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Enquiry Categories</h2>
+
+        <div class="services">
+
+            <div>
+
+                <img src="images/leadership_icon.png"
+                     alt="Leadership Development">
+
+                <h3>Leadership Development</h3>
+
+                <p>
+                    Build leadership skills through workshops,
+                    mentoring and practical community engagement.
+                </p>
+
+            </div>
+
+            <div>
+
+                <img src="images/volunteer_icon.png"
+                     alt="Volunteer Opportunities">
+
+                <h3>Volunteer Opportunities</h3>
+
+                <p>
+                    Join community projects and support initiatives
+                    that create meaningful social impact.
+                </p>
+
+            </div>
+
+            <div>
+
+                <img src="images/strategy_icon.png"
+                     alt="Strategic Planning">
+
+                <h3>Strategic Planning</h3>
+
+                <p>
+                    Work with our experienced team to develop
+                    sustainable community and organisational strategies.
+                </p>
+
+            </div>
+
+            <div>
+
+                <img src="images/sponsor_icon.png"
+                     alt="Sponsorship Opportunities">
+
+                <h3>Sponsorship Opportunities</h3>
+
+                <p>
+                    Partner with Footsteps to support programmes
+                    that make a lasting difference.
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
