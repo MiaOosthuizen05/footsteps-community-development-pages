@@ -21,15 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
        FAQ ACCORDION
     ================================== */
 
-    const accordions =
-        document.querySelectorAll(".accordion");
+    const accordions = document.querySelectorAll(".accordion");
 
     accordions.forEach(button => {
 
         button.addEventListener("click", () => {
 
-            const panel =
-                button.nextElementSibling;
+            const panel = button.nextElementSibling;
 
             if (panel.style.display === "block") {
 
@@ -49,23 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
        SERVICES SEARCH
     ================================== */
 
-    const searchInput =
-        document.getElementById("searchInput");
+    const searchInput = document.getElementById("searchInput");
 
     if (searchInput) {
 
         searchInput.addEventListener("keyup", () => {
 
-            const value =
-                searchInput.value.toLowerCase();
+            const value = searchInput.value.toLowerCase();
 
-            const cards =
-                document.querySelectorAll(".services div");
+            const cards = document.querySelectorAll(".services div");
 
             cards.forEach(card => {
 
-                const text =
-                    card.textContent.toLowerCase();
+                const text = card.textContent.toLowerCase();
 
                 if (text.includes(value)) {
 
@@ -87,25 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
        GALLERY SEARCH
     ================================== */
 
-    const gallerySearch =
-        document.getElementById("gallerySearch");
+    const gallerySearch = document.getElementById("gallerySearch");
 
     if (gallerySearch) {
 
         gallerySearch.addEventListener("keyup", () => {
 
-            const searchTerm =
-                gallerySearch.value.toLowerCase();
+            const searchTerm = gallerySearch.value.toLowerCase();
 
-            const images =
-                document.querySelectorAll(".gallery a");
+            const images = document.querySelectorAll(".gallery a");
 
             images.forEach(image => {
 
-                const altText =
-                    image.querySelector("img")
-                    .alt
-                    .toLowerCase();
+                const altText = image.querySelector("img").alt.toLowerCase();
 
                 if (altText.includes(searchTerm)) {
 
@@ -127,8 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
        ENQUIRY FORM
     ================================== */
 
-    const enquiryForm =
-        document.getElementById("enquiryForm");
+    const enquiryForm = document.getElementById("enquiryForm");
 
     if (enquiryForm) {
 
@@ -136,20 +123,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             e.preventDefault();
 
-            const name =
-                document.getElementById("name").value.trim();
-
-            const email =
-                document.getElementById("email").value.trim();
-
-            const phone =
-                document.getElementById("phone").value.trim();
-
-            const service =
-                document.getElementById("service").value;
-
-            const message =
-                document.getElementById("message").value.trim();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const service = document.getElementById("service").value;
+            const message = document.getElementById("message").value.trim();
 
             if (
                 name === "" ||
@@ -164,8 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
 
-            const emailPattern =
-                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (!emailPattern.test(email)) {
 
@@ -182,28 +159,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     responseText =
                         "Thank you for your interest in our Leadership Development Programme. A Footsteps representative will contact you within 2 business days.";
-
                     break;
 
                 case "Volunteer":
 
                     responseText =
                         "Thank you for your interest in volunteering with Footsteps. Our volunteer coordinator will contact you shortly.";
-
                     break;
 
                 case "Strategy":
 
                     responseText =
                         "Thank you for enquiring about our Strategic Planning services. A consultant will contact you soon.";
-
                     break;
 
                 case "Sponsorship":
 
                     responseText =
                         "Thank you for your interest in sponsorship opportunities. A team member will provide additional information shortly.";
-
                     break;
 
                 default:
@@ -213,17 +186,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
 
-            const response =
-                document.getElementById("response");
+            const response = document.getElementById("response");
 
-            response.innerHTML =
-
-                `<h3>Enquiry Submitted Successfully</h3>
-                 <p>${responseText}</p>
-                 <p><strong>Name:</strong> ${name}</p>
-                 <p><strong>Email:</strong> ${email}</p>
-                 <p><strong>Phone:</strong> ${phone}</p>
-                 <p><strong>Selected Service:</strong> ${service}</p>`;
+            response.innerHTML = `
+                <h3>Enquiry Submitted Successfully</h3>
+                <p>${responseText}</p>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Selected Service:</strong> ${service}</p>
+            `;
 
             enquiryForm.reset();
 
@@ -239,8 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
        CONTACT FORM
     ================================== */
 
-    const contactForm =
-        document.getElementById("contactForm");
+    const contactForm = document.getElementById("contactForm");
 
     if (contactForm) {
 
@@ -248,17 +219,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             e.preventDefault();
 
-            const name =
-                document.getElementById("contactName").value.trim();
-
-            const email =
-                document.getElementById("contactEmail").value.trim();
-
-            const subject =
-                document.getElementById("contactSubject").value.trim();
-
-            const message =
-                document.getElementById("contactMessage").value.trim();
+            const name = document.getElementById("contactName").value.trim();
+            const email = document.getElementById("contactEmail").value.trim();
+            const subject = document.getElementById("contactSubject").value.trim();
+            const message = document.getElementById("contactMessage").value.trim();
 
             if (
                 name === "" ||
@@ -272,8 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
 
-            const emailPattern =
-                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (!emailPattern.test(email)) {
 
@@ -283,7 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const body =
-
                 "Name: " + name +
                 "%0D%0A" +
                 "Email: " + email +
@@ -335,36 +297,32 @@ document.addEventListener("DOMContentLoaded", () => {
        FADE-IN ANIMATION
     ================================== */
 
-    const sections =
-        document.querySelectorAll("section");
+    const sections = document.querySelectorAll("section");
 
-    const observer =
-        new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
 
-            entries.forEach(entry => {
+        entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
+            if (entry.isIntersecting) {
 
-                    entry.target.style.opacity = "1";
-                    entry.target.style.transform =
-                        "translateY(0)";
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
 
-                }
+            }
 
-            });
-
-        }, {
-            threshold: 0.1
         });
+
+    }, {
+
+        threshold: 0.1
+
+    });
 
     sections.forEach(section => {
 
         section.style.opacity = "0";
-        section.style.transform =
-            "translateY(30px)";
-
-        section.style.transition =
-            "all 0.6s ease";
+        section.style.transform = "translateY(30px)";
+        section.style.transition = "all 0.6s ease";
 
         observer.observe(section);
 
